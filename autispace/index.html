@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutiSpaceWeb</title>
+    <link rel="shortcut icon" href="favicon.webp" type="image/x-icon">
+
+    <style>
+        body{
+            font-family: sans-serif;
+            margin: 0%;
+        
+        }
+        
+        h2 {
+            font-family: Helvetica;
+            color: #007bff;
+        }
+        
+        h1 {
+            font-family: Helvetica;
+            color: #007bff;
+        }
+        
+        .titulo1{
+        font-size: 25px;
+        padding-top: 50px;
+        margin: 70px;
+        
+        }
+        
+        p{
+            font-family: sans-serif;
+            color: #444554;
+        }
+        header{
+            background: #007bff;
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .logo img{
+            display: flex;
+            height: 50px;
+            align-items: center;
+        
+        }
+        
+        a{
+            text-decoration:none  ;
+            color: #D8E1FF;
+            font-weight: 600;
+            padding-right: 10px;
+            text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+            font-size: 15px;
+        }
+        
+        nav a:hover{
+            color: #444554;
+        }
+        
+        .foto1 img{
+            width: 700px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            float: right;
+            margin-right: 75px;
+            margin-top: 30px;
+        }
+        
+        
+        .introduccion{
+            border-radius: 20px;
+            border:2px solid #444554;
+            text-align: center;
+            padding: 0px;
+            font-size: 25px;
+            margin-top: 150px;
+            margin-left: 25px;
+            margin-right: 25px;
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+            background-color:white;
+        }
+        
+        
+        .definicion{
+            text-align: center;
+            padding: 0px;
+            font-size: 30px;
+            margin-top: 200px;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        
+        .foto2 img{
+            width: 500px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            float: left;
+            margin-left: 100px;
+            margin-top: 30px;
+            left: 500px;
+            
+        }
+        
+        .definicion p{
+            padding-top: 0px;
+            font-size: 25px;
+        }
+        
+        .foto3 img{
+        
+            width: 500px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            float: right;
+            margin-right: 100px;
+            margin-top: 30px;
+        }
+        
+        .problema {
+        
+            font-size: 25px;
+            padding-top: 100px;
+            margin: 100px;
+            text-align: center;
+        
+        }
+        
+        
+        
+        .problema h2{
+        font-size: 30px;
+        
+        }
+        
+        .problema p{
+            padding-top: 0px;
+            font-size: 25px;
+        }
+        
+        
+        .foto4 img{
+        
+            width: 500px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            float: left;
+            margin-left: 100px;
+            margin-top: 50px;
+            left: 500px;
+        }
+        
+        .tipos {
+        
+            text-align: center;
+            padding: 0px;
+            font-size: 30px;
+            margin-top: 200px;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        
+        
+        
+        .tipos h2{
+            font-size: 30px;
+        
+        }
+        
+        .tipos p{
+            padding-top: 0px;
+            font-size: 25px;
+        }
+        
+        
+        
+        
+        
+        .foto5 img{
+        
+            width: 500px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            float: right;
+            margin-right: 100px;
+            margin: 0px;
+        }
+        
+        .diagnostico {
+        
+            font-size: 25px;
+            padding-top: 200px;
+            margin: 100px;
+            text-align: center;
+        }
+        
+        
+        
+        .diagnostico h2{
+        font-size: 30px;
+        padding-top: 10px;
+        
+        }
+        
+        .diagnostico p{
+            padding-top: 0px;
+            font-size: 22px;
+            margin: 10px;
+        }
+        
+        
+        
+        #arriba{
+            position:fixed ;
+            bottom: 20px;
+            right: 30px;
+            width: 100px;
+        }
+        
+        
+        footer{
+            display: flex;
+            background: #007bff;
+            height: 10px;
+            padding: 50px;
+            box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.3);
+            bottom: 0;
+        }
+
+         @media (max-width: 1024px) {
+        .foto1 img, .foto2 img, .foto3 img, .foto4 img, .foto5 img {
+            width: 100%;
+            height: auto;
+            margin: auto;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+
+
+        .introduccion, .definicion, .problema, .tipos, .diagnostico {
+            margin: 30px;
+            margin-top: 200px;
+        }
+
+        .titulo1 {
+            font-size: 30px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .definicion h2, .problema h2, .tipos h2, .diagnostico h2 {
+            font-size: 50px;
+        }
+
+        .definicion p, .problema p, .tipos p, .diagnostico p {
+            font-size: 40px;
+        }
+
+        a{
+            font-size:25px ;
+        }
+    }
+
+    @media (max-width: 768px) {
+  .foto1 img, .foto2 img, .foto3 img, .foto4 img, .foto5 img {
+    width: 100%; 
+    height: auto;
+    margin: auto;
+
+  }
+
+  .introduccion, .definicion, .problema, .tipos, .diagnostico {
+    margin: 20px; 
+    margin-top: 50px;
+  }
+
+  .titulo1 {
+    font-size: 15px; 
+  }
+
+  .definicion h2, .problema h2, .tipos h2, .diagnostico h2 {
+    font-size: 30px; 
+  }
+
+  .definicion p, .problema p, .tipos p, .diagnostico p {
+    font-size: 18px; 
+  }
+
+  a {
+    font-size: 10px; 
+  }
+
+  #arriba {
+
+    bottom: 20px;
+    right: 10px;
+  }
+}
+
+        </style>
+
+</head>
+
+<body>
+    <header id="principio">
+            <div class="logo">
+               
+                <img src="autispace.webp" alt="logo_autispace">
+                
+            </div>
+            <nav>
+                <a href="#1" class="nav-link">¿Que es el autismo?</a>
+                <a href="#2" class="nav-link">Problema</a>
+                <a href="#3" class="nav-link">Tipos de autismo</a>
+                <a href="#4" class="nav-link">Diagnostico</a>
+            </nav>
+
+    </header>
+
+
+    <div class="foto1" >
+            <img src="https://cdn.pixabay.com/photo/2024/01/05/14/58/ai-generated-8489648_640.png" alt="foto1" >
+    </div>
+
+    <div class="titulo1">
+        <h1>AUTISPACE WEB, "Tu espacio virtual para entender y apoyar el autismo" </h1>
+    </div>
+
+    <div class="introduccion" >    
+        <section>
+            <h2>Introducción</h2>
+            <p>El trastorno del espectro autista (TEA) es una condición neurobiológica que afecta a millones de personas en
+                el mundo, incluyendo a Paraguay. Las personas con TEA presentan dificultades en la comunicación social y tienen 
+                comportamientos repetitivos. Dada la falta de información y recursos en Paraguay, se propone crear una página web
+                que ofrezca información clara y accesible sobre el TEA, incluyendo síntomas, diagnóstico, tratamientos y
+                estrategias de intervención. Esta plataforma busca empoderar a las familias y profesionales, mejorando así la
+                    calidad de vida de las personas con TEA en el país.</p>
+    
+            </section>
+    </div>
+
+
+
+ 
+    <div class="definicion">
+
+        <div class="foto2">
+            <img src="https://images.pexels.com/photos/8386122/pexels-photo-8386122.jpeg?auto=compress&cs=tinysrgb&w=600" alt="foto2">
+            </div>
+
+        <section id="1">
+
+            <h2>Que es el autismo?</h2>
+            <p>Este es un ejemplo de una publicación en el blog. Aquí puedes escribir sobre temas relacionados con el autismo, como diagnóstico, tratamiento, inclusión, etc.¿Qué es el autismo?
+El autismo, o Trastorno del Espectro Autista (TEA), es una condición del neurodesarrollo que afecta la forma en que una persona percibe y socializa con otras personas, lo que causa problemas en la interacción social y la comunicación.</p>
+       
+        </section> 
+    </div>
+
+    <div class="problema" >
+        <section>
+            <div class="foto3">
+                <img src="https://cdn.pixabay.com/photo/2024/01/05/15/45/ai-generated-8489717_640.png" alt="foto3">
+            </div>
+
+            <h2 id="2" >Problema</h2>
+            <p>Existen muchos mitos sobre las personas que padecen del espectro autista lo que permiten que ellos padecen diferentes tipos de dicriminacion o exclusión en distintos lugares como en las instituciones educativas, centros sociales o incluso en el entorno familiar.Debido a eso surgió la siguiente interrogante¿Puede una página web ser útil para mejorar la calidad de vida de las personas que padecen el trastorno autista?</p>
+    
+        </section>
+    </div>
+
+    <div class="tipos" >
+        <section>
+            <div class="foto4">
+                <img src="https://cdn.pixabay.com/photo/2024/01/05/16/17/ai-generated-8489754_640.png" alt="foto4">
+            </div>
+    
+            <h2 id="3">Tipos de autismo</h2>
+            <p>Los tipos de autismo se describen en la Clasificación Internacional de Enfermedades (CIE-11) de la Organización Mundial de la Salud (OMS) en tres niveles diferentes: Nivel 1, Nivel 2 y Nivel 3. Estos niveles se distinguen por la presencia de discapacidad intelectual y el grado de deterioro del lenguaje funcional en cada individuo. 
+                </p>
+    
+            </section>
+    </div>
+    
+    <div class="diagnostico">
+        <section>
+            <div class="foto5">
+                <img src="https://cdn.pixabay.com/photo/2022/10/10/18/26/brain-7512388_640.png" alt="foto5">
+            </div>
+    
+            <h2 id="4">diagnosticos</h2>
+            <p>Si tu pediatra sospecha que tu hijo podría tener TEA, te referirá a un especialista. Este profesional realizará una evaluación detallada que incluirá:
+    
+                Observación: El especialista observará a tu hijo en diferentes situaciones para evaluar sus habilidades sociales, comunicativas y de comportamiento.
+                Pruebas: Se realizarán pruebas para evaluar la audición, el habla, el lenguaje y el desarrollo en general.
+                Interacciones: Se crearán situaciones para evaluar cómo tu hijo interactúa y se comunica con otros.
+                Criterios DSM-5: Se utilizarán los criterios del Manual Diagnóstico y Estadístico de los Trastornos Mentales (DSM-5) como guía para el diagnóstico.
+                Pruebas genéticas: En algunos casos, se pueden recomendar pruebas genéticas para descartar otros trastornos.</p>
+    
+            </section>
+    </div>
+    <a href="#principio"><img src="https://cdn-icons-png.flaticon.com/128/892/892692.png" id="arriba"></a>
+
+    <footer>
+        <p>&copy; 2024 Autispaceweb</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
